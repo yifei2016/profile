@@ -1,0 +1,16 @@
+.text__container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top:-23em;
+}
+.text__container{
+  @at-root {
+    .app__text{
+      color:whitesmoke;
+      font-size: calc(3em + 2vw);
+      max-width: calc( 6em + 60px);
+      font-family: monospace;
+    }
+  } 
+}
