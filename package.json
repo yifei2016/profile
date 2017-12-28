@@ -11,7 +11,8 @@
     "unit": "cross-env BABEL_ENV=test karma start test/unit/karma.conf.js --single-run",
     "e2e": "node test/e2e/runner.js",
     "test": "npm run unit && npm run e2e",
-    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs"
+    "lint": "eslint --ext .js,.vue src test/unit/specs test/e2e/specs",
+    "deploy": "node ./node_modules/vue-gh-pages/index.js"
   },
   "dependencies": {
     "bodymovin": "^4.13.0",
@@ -19,6 +20,7 @@
     "bootstrap-vue": "^1.4.0",
     "sweet-scroll": "^2.2.1",
     "vue": "^2.5.2",
+    "vue-gh-pages": "^1.7.0",
     "vue-router": "^3.0.1",
     "vue-star": "0.0.4"
   },
@@ -98,5 +100,6 @@
     "> 1%",
     "last 2 versions",
     "not ie <= 8"
-  ]
+  ],
+  "homepage": "https://github.com/myusername/my-app"
 }
